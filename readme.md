@@ -1,3 +1,4 @@
+``` mermaid 
 classDiagram
     class Model {
         +format(system_message, prompt_message, prefix_message)
@@ -40,3 +41,4 @@ classDiagram
     Agent *-- Preprocessor
     Agent --> Response
     AgentChain --|> Agent
+```
