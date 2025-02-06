@@ -1,0 +1,27 @@
+flowchart TD
+    A[Analyze Code Structure] --> B{Identify Class Types}
+    B --> C[Preprocessors]
+    B --> D[Agents]
+    
+    C --> E[Create preprocessors/]
+    D --> F[Create agents/]
+    
+    E --> G[Identify Preprocessor Classes]
+    G --> H[Preprocessor Base]
+    G --> I[SimpleTemplatePreprocessor]
+    
+    F --> J[Identify Agent Classes]
+    J --> K[Agent Base]
+    J --> L[ChatAgent]
+    J --> M[ParsedAgent]
+    J --> N[MultiShotAgent]
+    J --> O[AgentChain]
+    J --> P[ParsedListAgentChain]
+    
+    Q[Extract Common Utilities] --> R[Identify Shared Code]
+    R --> S[Type Definitions]
+    R --> T[Common Functions]
+    
+    U[Update Imports] --> V[Analyze Dependencies]
+    V --> W[Create __init__.py]
+    V --> X[Update Import Paths]
