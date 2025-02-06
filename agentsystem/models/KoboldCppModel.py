@@ -87,7 +87,7 @@ class KoboldCPPClient:
         # Add optional parameters
         optional_params = {
             k: v for k, v in locals().items() 
-            if k != 'self' and k != 'prompt' and v is not None
+            if not k in ['self', 'prompt', 'payload'] and v is not None
         }
         
         payload.update(optional_params)

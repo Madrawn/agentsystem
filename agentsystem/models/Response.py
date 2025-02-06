@@ -1,7 +1,9 @@
 from typing import Any, Callable
 
+from annotated_types import T
 
-class Response[T:Any]():
+
+class Response():
     """Creates a response object with the given resolver function. The resolver function generates the response content when called.
 
         Attributes:
